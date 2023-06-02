@@ -1,3 +1,4 @@
+```javasript
 # Movie-Cards-Test
 // * There should be a header showing icon and two tabs "HOME" and "LIKED LIST"
 // * The TAB should show an active style for current active tab
@@ -29,3 +30,4 @@
 // logo & colors: https://www.themoviedb.org/about/logos-attribution
 // rating icon color: #f5c518
 // icons: https://ionicons.com/v4/
+```
