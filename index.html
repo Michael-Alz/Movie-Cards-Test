@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="logo-container">
+					<img
+						id="websiet-logo-icon"
+						src="logo.svg"
+						style="cursor: pointer"
+					/>
+				</div>
+				<div class="nav-bar-container">
+					<ul class="nav-bar">
+						<li class="tab-item active" name="HOME">HOME</li>
+						<li class="tab-item" name="LIKED">LIKED</li>
+					</ul>
+				</div>
+
+				<div class="search-box-container">
+					<input
+						id="search-input"
+						type="text"
+						placeholder="Search by movie title..."
+					/>
+					<button class="btn" id="submit-btn">submit</button>
+					<button class="btn" id="clear-btn">clear</button>
+				</div>
+			</nav>
+		</header>
+
+		<div class="select-container">
+			<select class="filter-select">
+				<option value="popular">Popular</option>
+				<option value="now_playing">Now Playing</option>
+				<option value="top_rated">Top Rated</option>
+				<option value="upcoming">Upcoming</option>
+			</select>
+		</div>
+
+		<div class="page-container">
+			<button class="btn" id="prev-btn">prev</button>
+			<span class="current-page"></span>
+
+			<button class="btn" id="next-btn">next</button>
+		</div>
+
+		<!-- Movie Cards -->
+		<div id="home-container" class="tab-view tab-view-active">
+			<div class="list-container" id="all-movies"></div>
+		</div>
+
+		<div id="liked-container" class="tab-view">
+			<div class="list-container" id="liked-movies"></div>
+		</div>
+
+		<!-- Modal -->
+		<div id="my-modal" class="modal">
+			<div class="modal-container">
+				<div class="close-modal-container">
+					<i class="icon ion-md-close" id="close-modal"></i>
+				</div>
+				<div class="modal-content-container">
+                    
+                </div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
